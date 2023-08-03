@@ -1,3 +1,6 @@
+import axios from 'axios';
+import Notiflix from 'notiflix';
+
 // const BASE_URL = "https://pixabay.com/api/";
 
 key = 38627357-1628736c94afded4ff66c6ede
