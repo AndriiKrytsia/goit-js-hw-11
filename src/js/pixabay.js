@@ -1,6 +1,7 @@
 import axios from 'axios';
 
 const BASE_URL = "https://pixabay.com/api/";
+
  export let userParams = {
    page: 1,
     per_page: 40,
@@ -19,8 +20,7 @@ const BASE_URL = "https://pixabay.com/api/";
    q: userParams.q
   })
   try {
-    const URL = BASE_URL + '?' + params;
-    const response = await axios.get(URL);
+    const response = await axios.get(`${ BASE_URL }?${params}`);
    return response.data;
   } catch (error) {
     console.error(error);

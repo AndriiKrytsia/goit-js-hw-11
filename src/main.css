@@ -83,7 +83,7 @@ picture {
   text-align: center;
   display: block;
   left: 50%;
-  background-color: aquamarine;
+  background-color: rgb(169, 203, 192);
   height: 100px;
 }
 
@@ -107,6 +107,7 @@ picture {
 }
 
 .input:hover {
+  background-color: #6fc5ff;
   box-shadow: 0 0 20px #6fc5ff50;
   transform: scale(1.1);
   transition: all 0.5s;

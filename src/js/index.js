@@ -22,6 +22,7 @@ refs.loadMore.addEventListener('click', onClickButton);
    const dataText = refs.searchForm.elements.searchQuery.value;
    input = dataText;
 
+   console.log(input);
      e.target.reset();
   refs.gallery.innerHTML = '';
 
@@ -37,7 +38,11 @@ refs.loadMore.addEventListener('click', onClickButton);
    } 
    selectMarkup(dataInput.hits, refs.gallery)
    refs.loadMore.classList.remove('is-hidden')
-
+ 
+   if (dataInput.totalHits < userParams.per_page) {
+  refs.loadMore.classList.add('is-hidden')
+   }
+   
    lightbox = new SimpleLightbox('.gallery a', { captionsData: 'alt' })
    
 } 
