@@ -1,6 +1,10 @@
 
 import LoadMoreBtn from './loader';
 
+const loadMoreBtn = new LoadMoreBtn({
+  selector: '.load-more',
+  hidden: true,
+});
 
 export default class LoadMoreBtn {
   constructor({ selector, hidden = false }) {

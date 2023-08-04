@@ -1,0 +1,160 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: 200px;
+}
+
+picture {
+  display: block;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.form-position {
+  background-color: aquamarine;
+  height: 100px;
+}
+
+.search-form {
+  text-align: center;
+  display: block;
+  left: 50%;
+}
+
+.photo-card {
+  border-radius: 15px;
+  box-shadow: 15px 15px 15px #bebebe, 5px 5px 15px #ffffff;
+  width: calc((100% - 60px) / 4);
+}
+
+.input {
+  min-width: 250px;
+  margin-right: 10px;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #2ba8fb;
+  color: #ffffff;
+  font-size: small;
+  font-weight: bold;
+  text-align: center;
+}
+
+.input:hover {
+  box-shadow: 0 0 20px #6fc5ff50;
+  transform: scale(1.1);
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+.input:focus {
+  outline: none;
+  color: #e8e8e8;
+}
+
+button {
+  padding: 15px 30px;
+  border: 0;
+  border-radius: 10px;
+  background-color: #2ba8fb;
+  color: #ffffff;
+  font-weight: bold;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+}
+
+button:hover {
+  background-color: #6fc5ff;
+  box-shadow: 0 0 20px #6fc5ff50;
+  transform: scale(1.1);
+}
+
+button:active {
+  background-color: #3d94cf;
+  transition: all 0.25s;
+  -webkit-transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
+}
+
+.is-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.load-more {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
