@@ -72,15 +72,19 @@ picture {
   margin-top: 20px;
 }
 
-.form-position {
+/* .form-position {
   background-color: aquamarine;
   height: 100px;
-}
+} */
 
 .search-form {
+  padding-top: 25px;
+  padding-bottom: 25px;
   text-align: center;
   display: block;
   left: 50%;
+  background-color: aquamarine;
+  height: 100px;
 }
 
 .photo-card {
